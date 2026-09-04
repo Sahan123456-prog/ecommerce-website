@@ -54,3 +54,17 @@ nav a:hover {
     color: #ff9800;
 }
 
+.cart {
+    cursor: pointer;
+    font-size: 17px;
+}
+
+#cart-count {
+    background-color: #ff9800;
+    color: white;
+
+    padding: 3px 7px;
+    border-radius: 50%;
+
+    margin-left: 5px;
+}
