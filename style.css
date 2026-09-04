@@ -109,6 +109,12 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
 #shop-now {
     border: none;
 
