@@ -241,3 +241,25 @@ nav a:hover {
 
     color: #555;
 }
+
+.contact {
+    padding: 80px 15%;
+
+    text-align: center;
+
+    background-color: white;
+}
+
+.contact h2 {
+    font-size: 36px;
+
+    margin-bottom: 25px;
+}
+
+.contact p {
+    margin: 10px 0;
+
+    font-size: 17px;
+
+    color: #555;
+}
