@@ -273,3 +273,14 @@ footer {
 
     padding: 25px;
 }
+
+@media (max-width: 1000px) {
+
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+}
