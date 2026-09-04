@@ -109,3 +109,25 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
+#shop-now {
+    border: none;
+
+    background-color: #ff9800;
+    color: white;
+
+    padding: 15px 35px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#shop-now:hover {
+    background-color: #e68900;
+    transform: translateY(-3px);
+}
