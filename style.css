@@ -198,3 +198,24 @@ nav a:hover {
 
     margin-bottom: 18px;
 }
+
+.add-cart {
+    background-color: #111;
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.add-cart:hover {
+    background-color: #ff9800;
+}
