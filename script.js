@@ -5,3 +5,9 @@ shopNowButton.addEventListener("click", function () {
         behavior: "smooth"
     });
 });
+
+let cartCount = 0;
+
+const cartCountDisplay = document.getElementById("cart-count");
+
+const addCartButtons = document.getElementsByClassName(".add-cart");
