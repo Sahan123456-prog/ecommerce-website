@@ -150,3 +150,25 @@ nav a:hover {
 
     gap: 30px;
 }
+
+.product-card {
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    padding-bottom: 25px;
+    
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
