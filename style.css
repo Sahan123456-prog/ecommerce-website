@@ -189,3 +189,12 @@ nav a:hover {
 
     padding: 0 10px;
 }
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+
+    color: #ff9800;
+
+    margin-bottom: 18px;
+}
