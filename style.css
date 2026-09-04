@@ -131,3 +131,22 @@ nav a:hover {
     background-color: #e68900;
     transform: translateY(-3px);
 }
+
+.products {
+    padding: 80px 8%;
+    background-color: white;
+}
+
+.products h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.product-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+}
