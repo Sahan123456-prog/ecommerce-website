@@ -43,3 +43,23 @@ const products = [
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+function updateCartCount() {
+
+    const cartCountDisplay =
+        document.getElementById("cart-count");
+
+    if (!cartCountDisplay) {
+        return;
+    }
+
+    let totalQuantity = 0;
+
+    cart.forEach(function (item) {
+
+        totalQuantity += item.quantity;
+    });
+
+    cartCountDisplay.textContent = 
+        totalQuantity;
+
+}
