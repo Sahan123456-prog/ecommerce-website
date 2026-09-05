@@ -1,10 +1,14 @@
 const shopNowButton = document.getAnimationsById("shop-now");
 
-shopNowButton.addEventListener("click", function () {
-    document.getElementById("products").scrollIntoView ({
-        behavior: "smooth"
+if (shopNowButton) {
+
+    shopNowButton.addEventListener("click", function () {
+
+        document.getElementById("products").scrollIntoView ({
+            behavior: "smooth"
+        });
     });
-});
+}
 
 let cartCount = 0;
 
