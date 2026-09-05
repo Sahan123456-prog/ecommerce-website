@@ -63,3 +63,54 @@ function updateCartCount() {
         totalQuantity;
 
 }
+
+const addCartButtons = 
+    document.querySelectorAll(".add-cart");
+
+addCartButtons.forEach(function(button, index) {
+
+    button.addEventListener("click", function() {
+
+        const product = products[index];
+
+        const existingProduct = 
+            cart.find(function (item) {
+
+                return item.id === product.id;
+            });
+
+        if (existingProduct) {
+
+            existingProduct.quantity++;
+        } else {
+
+            cart.push ({
+                id: product.id,
+                name: product.name,
+                price: product.price,
+                image: product.image,
+                quantity: 1
+            });
+
+        }
+
+        localStorage.setItam (
+            "cart",
+            JSON.stringify(cart)
+        );
+
+        updateCartCount();
+
+        button.textContent = 
+            "Added ✓";
+
+    setTimeout(function () {
+        button.textContent = 
+            "Add to Cart";
+    }, 1000);
+
+    });
+
+});
+
+updateCartCount();
