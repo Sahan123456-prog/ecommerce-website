@@ -39,4 +39,7 @@ const products = [
         price: 35,
         image: "images/bag.jpg"
     }
-]
+];
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
