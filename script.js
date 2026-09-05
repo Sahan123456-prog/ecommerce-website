@@ -10,28 +10,33 @@ if (shopNowButton) {
     });
 }
 
-let cartCount = 0;
+const products = [
 
-const cartCountDisplay = document.getElementById("cart-count");
+    {
+        id: 1,
+        name: "Premium Black T-Shirt",
+        price: 25,
+        image: "images/tshirt.jpg"
+    },
 
-const addCartButtons = document.getElementsByClassName(".add-cart");
+    {
+        id: 2,
+        name: "Casual Sneakers",
+        price: 60,
+        image: "images/shoes.jpg"
+    },
 
-addCartButtons.forEach(function (button) {
+    {
+        id: 3,
+        name: "Classic Watch",
+        price: 45,
+        image: "images/watch.jpg"
+    },
 
-    button.addEventListener("click", function () {
-
-        cartCount++;
-
-        cartCountDisplay.textContent = cartCount;
-
-        button.textContent = "Added ✓";
-
-        setTimeout(function () {
-
-            button.textContent = "Add to Cart";
-
-        }, 1000);
-
-    });
-
-});
+    {
+        id: 4,
+        name: "Travel Backpack",
+        price: 35,
+        image: "images/bag.jpg"
+    }
+]
