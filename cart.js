@@ -122,4 +122,30 @@ function increaseQuantity(id) {
     item.quantity++;
 
     saveCart();
+
+}
+
+function decreaseQuantity(id) {
+
+    const item =
+        cart.find(function (product) {
+
+            return product.id === id;
+
+        });
+
+    if (item.quantity > 1) {
+
+        item.quantity--;
+
+    } else {
+
+        removeItem(id);
+
+        return;
+
+    }
+
+    saveCart();
+    
 }
