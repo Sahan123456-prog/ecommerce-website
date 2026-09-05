@@ -147,5 +147,16 @@ function decreaseQuantity(id) {
     }
 
     saveCart();
+
+}
+
+function saveCart() {
+
+    localStorage.setItem (
+        "cart",
+        JSON.stringify(cart)
+    );
+
+    displayCart();
     
 }
