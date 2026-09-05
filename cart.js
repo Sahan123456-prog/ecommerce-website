@@ -158,5 +158,32 @@ function saveCart() {
     );
 
     displayCart();
-    
+
 }
+
+const checkoutButton =
+    document.getElementById("checkout-btn");
+
+checkoutButton.addEventListener(
+    "click",
+    function () {
+
+        if(cart.length === 0) {
+
+            alert(
+                "Your cart is empty."
+            );
+
+            return;
+
+        }
+
+        alert(
+            "Checkout page will be added next."
+        );
+
+    }
+
+);
+
+displayCart();
