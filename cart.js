@@ -107,5 +107,19 @@ function displayCart() {
 
     cartCount.textContent =
         totalQuantity;
-        
+
+}
+
+function increaseQuantity(id) {
+
+    const item =
+        cart.find(function (product) {
+
+            return product.id === id;
+
+        });
+
+    item.quantity++;
+
+    saveCart();
 }
