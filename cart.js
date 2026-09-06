@@ -65,6 +65,7 @@ function displayCart() {
 
                     <button 
                         onclick="decreaseQuantity(${item.id})">
+                        -
                     </button>
 
                     <span>
@@ -160,7 +161,7 @@ function removeItem(id) {
         });
 
         saveCart();
-        
+
 }
 
 function saveCart() {
