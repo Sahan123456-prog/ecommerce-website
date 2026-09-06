@@ -398,3 +398,30 @@ footer {
     margin-bottom: 15px;
 }
 
+.quantity-controls {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.quantity-controls button {
+    width: 35px;
+    height: 35px;
+
+    border: none;
+
+    background-color: #111;
+    color: white;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+
+    font-size: 18px;
+}
+
+.quantity-controls button:hover {
+    background-color: #ff9800;
+}
