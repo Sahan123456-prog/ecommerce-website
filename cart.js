@@ -150,6 +150,19 @@ function decreaseQuantity(id) {
 
 }
 
+function removeItem(id) {
+
+    cart = 
+        cart.filter(function (item) {
+
+            return item.id !== id;
+
+        });
+
+        saveCart();
+        
+}
+
 function saveCart() {
 
     localStorage.setItem (
