@@ -437,3 +437,16 @@ footer {
 
     margin-bottom: 15px;
 }
+
+.remove-btn {
+    border: none;
+
+    background-color: #d9534f;
+    color: white;
+
+    padding: 10px 16px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
