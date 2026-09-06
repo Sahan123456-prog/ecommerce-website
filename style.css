@@ -333,3 +333,9 @@ footer {
         padding: 60px 8%;
     }
 }
+
+.cart-link {
+    color: white;
+    text-decoration: none;
+}
+
