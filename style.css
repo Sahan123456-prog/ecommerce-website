@@ -450,3 +450,48 @@ footer {
 
     cursor: pointer;
 }
+
+.cart-summary {
+    max-width: 1000px;
+
+    margin: 40px auto;
+
+    text-align: right;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+}
+
+.cart-summary h2 {
+    margin-bottom: 20px;
+}
+
+#checkout-btn {
+    border: none;
+
+    background-color: #ff9800;
+    color: white;
+
+    padding: 14px 30px;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+#checkout-btn:hover {
+    background-color: #e68900;
+}
+
+.empty-cart {
+    text-align: center;
+
+    font-size: 20px;
+
+    padding: 50px;
+}
