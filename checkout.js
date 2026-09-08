@@ -105,7 +105,7 @@ checkoutForm.addEventListener (
                 document.getElementById("email").value,
 
             phone:
-                document.getAnimations("phone").value,
+                document.getElementById("phone").value,
 
             address:
                 document.getElementById("address").value,
@@ -117,6 +117,14 @@ checkoutForm.addEventListener (
                 document.getElementById("postal-code").value
         };
 
+        let orderTotal = 0;
+
+        cart.forEach(function(item) {
+
+            orderTotal +=
+                item.price * item.quantity;
+        });
+
         //create order
 
         const order = {
@@ -126,6 +134,10 @@ checkoutForm.addEventListener (
             customer: customer,
 
             items: cart,
+
+            total: orderTotal,
+
+            status: "Pending",
 
             date:
                 new Date().toLocaleString()
@@ -181,4 +193,4 @@ checkoutForm.addEventListener (
     }
 );
 
-dispalyOrder();
+displayOrder();
