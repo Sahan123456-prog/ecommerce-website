@@ -78,5 +78,91 @@ function dispalyOrder() {
 
     cartCount.textContent = 
         totalQuantity;
-        
+
 }
+
+checkoutForm.addEventListener (
+    "submit",
+    function(event) {
+
+        event.preventDefault();
+
+        if(cart.length === 0) {
+            alert(
+                "Your cart is empty!"
+            );
+
+            return;
+
+        }
+
+        const customer = {
+
+            name:
+                document.getElementById("name").value,
+
+            email:
+                document.getElementById("email").value,
+
+            phone:
+                document.getAnimations("phone").value,
+
+            address:
+                document.getElementById("address").value,
+
+            city:
+                document.getElementById("city").value,
+
+            postalcode:
+                document.getElementById("postal-code").value
+        };
+
+        //create order
+
+        const order = {
+
+            id: Date.now(),
+
+            customer: customer,
+
+            items: cart,
+
+            date:
+                new Date().toLocaleString()
+
+        };
+
+        //Get old orders
+
+        let orders =
+            JSON.parse(
+                localStorage.getItem("orders")
+            ) || [];
+
+        orders.push(order);
+
+        //Save order
+
+        localStorage.setItem(
+            "orders",
+            JSON.stringify(orders)
+        );
+
+        alert(
+            "order placed successfully!"
+        );
+
+        //clear cart
+
+        localStorage.removeItem("cart");
+
+        cart = [];
+
+        //Go home
+
+        window.location.href = 
+            "index.html";
+    }
+);
+
+dispalyOrder();
