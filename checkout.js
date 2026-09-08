@@ -148,8 +148,24 @@ checkoutForm.addEventListener (
             JSON.stringify(orders)
         );
 
-        alert(
-            "order placed successfully!"
+        const checkoutButton =
+            document.getElementById("checkout-btn");
+
+        checkoutButton.addEventListener(
+            "click",
+            function() {
+
+                if(cart.length === 0) {
+
+                    alert("Your cart is empty.");
+
+                    return;
+
+                }
+
+                window.location.href =
+                    "checkout.html";
+            }
         );
 
         //clear cart
