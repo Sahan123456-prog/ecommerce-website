@@ -178,26 +178,30 @@ function saveCart() {
 const checkoutButton =
     document.getElementById("checkout-btn");
 
-checkoutButton.addEventListener(
-    "click",
-    function () {
+if(checkoutButton) {
+    
+    checkoutButton.addEventListener(
+        "click",
+        function () {
 
-        if(cart.length === 0) {
+            if(cart.length === 0) {
+
+                alert(
+                    "Your cart is empty."
+                );
+
+                return;
+
+            }
 
             alert(
-                "Your cart is empty."
+                "Checkout page will be added next."
             );
-
-            return;
 
         }
 
-        alert(
-            "Checkout page will be added next."
-        );
+    );
 
-    }
-
-);
+}
 
 displayCart();
