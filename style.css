@@ -587,3 +587,27 @@ footer {
 .form-group textarea {
     resize: vertical;
 }
+
+#place-order-btn {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #ff9800;
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#place-order-btn:hover {
+    background-color: #e68900;
+}
