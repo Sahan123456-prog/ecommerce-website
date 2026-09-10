@@ -651,3 +651,19 @@ footer {
 .summary-total h3 {
     color: #ff9800;
 }
+
+@media (max-width: 800px) {
+
+    .checkout-container {
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-page {
+        padding: 50px 5%;
+    }
+
+    .checkout-form,
+    .order-summary {
+        padding: 25px;
+    }
+}
