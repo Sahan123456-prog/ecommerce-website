@@ -546,3 +546,44 @@ footer {
     box-shadow: 
         0 5px 20px rgba(0, 0, 0, 0.08);
 }
+
+.checkout-form h2,
+.order-summary h2 {
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ff9800;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
