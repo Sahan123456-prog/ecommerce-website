@@ -194,9 +194,8 @@ if(checkoutButton) {
 
             }
 
-            alert(
-                "Checkout page will be added next."
-            );
+            window.location.href =
+                "checkout.html"
 
         }
 
