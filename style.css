@@ -611,3 +611,25 @@ footer {
 #place-order-btn:hover {
     background-color: #e68900;
 }
+
+.checkout-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.checkout-item h4 {
+    margin-bottom: 6px;
+}
+
+.checkout-item p {
+    color: #666;
+}
